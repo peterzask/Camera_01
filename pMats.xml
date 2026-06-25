@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<calibrationDate>"Sat Mar 14 12:56:34 2026&#x0a;"</calibrationDate>
+<ImageFilename>/home/rgrabbe/Downloads/IMG_20251119_105708393.jpg</ImageFilename>
+<width>2296</width>
+<height>4080</height>
+<fx>3729.</fx>
+<fy>3729.</fy>
+<u0>1148.</u0>
+<v0>2040.</v0>
+<cwR type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    -9.4534404807523642e-01 3.2410358557639324e-01
+    -3.5797996944693058e-02 2.5753702796844513e-01
+    6.7479262504429494e-01 -6.9161375955876503e-01
+    -1.9999827497732781e-01 -6.6303226090617629e-01
+    -7.2137986595394987e-01</data></cwR>
+<cwk type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+    0. 0. 0.</data></cwk>
+<cwt type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+    2.1453472780906410e-02 2.4564226334137840e-02 2.0000000000000001e-01</data></cwt>
+<Pext type_id="opencv-matrix">
+  <rows>4</rows>
+  <cols>4</cols>
+  <dt>d</dt>
+  <data>
+    -9.4534404807523642e-01 3.2410358557639324e-01
+    -3.5797996944693058e-02 2.1453472780906410e-02
+    2.5753702796844513e-01 6.7479262504429494e-01
+    -6.9161375955876503e-01 2.4564226334137840e-02
+    -1.9999827497732781e-01 -6.6303226090617629e-01
+    -7.2137986595394987e-01 2.0000000000000001e-01 0. 0. 0. 1.</data></Pext>
+<Pint type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>4</cols>
+  <dt>d</dt>
+  <data>
+    3729. 0. 1148. 0. 0. 3729. 2040. 0. 0. 0. 1. 0.</data></Pint>
+<K type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    3729. 0. 1148. 0. 3729. 2040. 0. 0. 1.</data></K>
+<Perspective type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>4</cols>
+  <dt>d</dt>
+  <data>
+    -3.7547859749465292e+03 4.4742123509407998e+02
+    -9.6163481672189482e+02 3.0960000000000002e+02
+    5.5235909634058316e+02 1.1637158865415763e+03
+    -4.0506426359406923e+03 4.9960000000000002e+02
+    -1.9999827497732781e-01 -6.6303226090617629e-01
+    -7.2137986595394987e-01 2.0000000000000001e-01</data></Perspective>
+</opencv_storage>

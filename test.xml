@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<frameCount>5</frameCount>
+<calibrationDate>"Thu Mar  5 17:29:09 2026&#x0a;"</calibrationDate>
+<ImageFilename>/home/rgrabbe/Downloads/IMG_20251119_105708393.jpg</ImageFilename>
+<cwt type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+    0. 0. 2.0000000000000001e-01</data></cwt>
+<cwk type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+    0. 0. 0.</data></cwk>
+<cwR type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    1. 0. 0. 0. 1. 0. 0. 0. 1.</data></cwR>
+<Pint type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>4</cols>
+  <dt>d</dt>
+  <data>
+    3729. 0. 1148. 0. 0. 3729. 2040. 0. 0. 0. 1. 0.</data></Pint>
+<Pext type_id="opencv-matrix">
+  <rows>4</rows>
+  <cols>4</cols>
+  <dt>d</dt>
+  <data>
+    1. 0. 0. 0. 0. 1. 0. 0. 0. 0. 1. 2.0000000000000001e-01 0. 0. 0. 1.</data></Pext>
+<Perspective type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>4</cols>
+  <dt>d</dt>
+  <data>
+    3729. 0. 1148. 2.2960000000000002e+02 0. 3729. 2040. 408. 0. 0. 1.
+    2.0000000000000001e-01</data></Perspective>
+</opencv_storage>
