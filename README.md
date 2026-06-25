@@ -1,0 +1,56 @@
+# Camera_01 — Wire-Frame Jack Camera Calibration
+
+An interactive OpenCV tool for manually calibrating a camera by aligning a 3D wire-frame jack model to a photograph. This is a direct, visual approach to estimating the camera perspective matrix without a checkerboard target.
+
+## Concept
+
+A 3D wire-frame jack (an L-shaped bracket with known real-world dimensions) is projected onto a photograph using a perspective matrix. The user interactively adjusts the camera parameters — pan, rotate, zoom — until the projected jack overlay matches the physical jack visible in the image. Once aligned, the perspective matrix P = Pint * Pext is known, and the DLT calibration equations can be solved for the full camera matrix.
+
+## Controls
+
+| Key | Action |
+|-----|--------|
+| `p` | Pan — middle-click to set start, drag, release, `s` to save / `space` to cancel |
+| `r` | Rotate — middle-click center, middle-click radius, drag to rotate, `s` to save / `space` to cancel |
+| `2` | Arcball rotate — drag with middle button, `s` to save / `space` to cancel |
+| `z` | Zoom (translate along Z) — mouse gesture, `s` to save / `space` to cancel |
+| `f` | Zoom (scale focal length) — mouse gesture, `s` to save / `space` to cancel |
+| `w` | Write perspective matrices to `pMats.xml` |
+| `4` | Read perspective matrices from `pMats.xml` |
+| `6` | Read jack points / compute DLT equations |
+| `q` | Quit |
+
+`space` cancels any active sub-mode and returns to the main menu without saving.
+
+## Build
+
+Requires OpenCV 4.
+
+```bash
+make camera_cal_init.exe
+```
+
+## Run
+
+```bash
+./camera_cal_init.exe
+```
+
+The image path is set in `image_data_s::load()` in `camera_cal_init.cpp`. By default it looks for `IMG_20251119_105708393.jpg` in the working directory.
+
+## Output
+
+- `pMats.xml` — saved camera intrinsic and extrinsic matrices
+- `Camera_outFile.m` — matrices exported in Octave/MATLAB format
+- `cal_points.xml` / `cal_data.txt` — collected image/object point correspondences for DLT
+
+## Files
+
+| File | Description |
+|------|-------------|
+| `camera_cal_init.cpp` | Main program, all state machines, image/jack/pan/rotate/zoom logic |
+| `camera_cal.h` | Struct definitions for all subsystems |
+| `camera_cal.cpp` | Additional calibration code |
+| `terminal_server.c/h` | ANSI terminal positioning utilities (`rc()`, `clr()`) |
+| `Camera_Wire_Frame_Calibration_Design.odg` | Design drawing of the wire-frame jack |
+| `dlt.m` / `DLT.m` | Octave/MATLAB scripts for DLT solution |
