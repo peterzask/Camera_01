@@ -2,6 +2,16 @@
 
 An interactive OpenCV tool for manually calibrating a camera by aligning a 3D wire-frame jack model to a photograph. This is a direct, visual approach to estimating the camera perspective matrix without a checkerboard target.
 
+## Project Goal
+
+This tool is the first step in a shoe last measurement and feedback system. The broader goal is to:
+
+1. **Calibrate the camera** against a physical wire-frame jack placed near the shoe last.
+2. **Capture last cross-sections** — using the calibrated camera to backproject image points to world coordinates and extract the last profile at any slice.
+3. **Close the feedback loop** — compare measured cross-sections to a target last design and guide a shaping workbench to cut or adjust the last until it matches.
+
+The end result is a camera-guided process for tuning a 3D-printed or machined shoe last to a precise fit specification.
+
 ## Concept
 
 A 3D wire-frame jack (an L-shaped bracket with known real-world dimensions) is projected onto a photograph using a perspective matrix. The user interactively adjusts the camera parameters — pan, rotate, zoom — until the projected jack overlay matches the physical jack visible in the image. Once aligned, the perspective matrix P = Pint * Pext is known, and the DLT calibration equations can be solved for the full camera matrix.
