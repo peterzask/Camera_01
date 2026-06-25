@@ -14,7 +14,9 @@ The end result is a camera-guided process for tuning a 3D-printed or machined sh
 
 ## Concept
 
-A 3D wire-frame jack (an L-shaped bracket with known real-world dimensions) is projected onto a photograph using a perspective matrix. The user interactively adjusts the camera parameters — pan, rotate, zoom — until the projected jack overlay matches the physical jack visible in the image. Once aligned, the perspective matrix P = Pint * Pext is known, and the DLT calibration equations can be solved for the full camera matrix.
+A 3D wire-frame jack (an L-shaped bracket with known real-world dimensions) is projected onto a photograph using a perspective matrix. The user interactively adjusts the camera parameters — pan, rotate, zoom — until the projected jack overlay matches the physical jack visible in the image. Once aligned, **P = Pint * Pext is the solution** — the full camera matrix is known directly from the alignment. No least-squares solve is required.
+
+The `6` key / DLT code builds the A-matrix from the jack vertices and their image projections, but this is a verification tool only, not part of the calibration solution.
 
 ## Controls
 
